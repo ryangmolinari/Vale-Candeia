@@ -1,0 +1,11 @@
+{
+  "name": "vale-candeia",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "bun build src/main.ts --outdir dist --target browser --minify && node tools/inline.mjs",
+    "dev": "bun build src/main.ts --outdir dist --target browser --watch",
+    "check": "tsc --noEmit"
+  }
+}
